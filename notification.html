@@ -536,10 +536,11 @@ nav img {
 		  document.getElementById("mySidebar").style.width = "0";
 		}
 
+		const w = window.innerWidth
 		let y = document.getElementById('main');
 
 		window.onclick = function(event) {
-		    if (event.target == y) {
+		    if (event.target == y && w <= 710) {
 		     closeNav()
 		 }
 		}
